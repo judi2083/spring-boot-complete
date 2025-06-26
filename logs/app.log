@@ -1,0 +1,194 @@
+2025-06-26 16:20:35 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/actuator/health", parameters={}
+2025-06-26 16:20:35 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/octet-stream" to []
+2025-06-26 16:20:35 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-06-26 16:20:35 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.springframework.boot.actuate.health.SystemHealth@54478e9b]
+2025-06-26 16:20:35 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-26 16:20:55 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/?continue", parameters={masked}
+2025-06-26 16:20:55 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.springboot.HelloController#index()
+2025-06-26 16:20:55 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2025-06-26 16:20:55 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Greetings from Spring Boot!"]
+2025-06-26 16:20:55 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-26 18:12:27 [main] INFO  com.example.springboot.Application - Starting Application using Java 17.0.15 with PID 85153 (/Users/anilshrivastava/Downloads/gs-spring-boot/complete/target/classes started by anilshrivastava in /Users/anilshrivastava/Downloads/gs-spring-boot)
+2025-06-26 18:12:27 [main] DEBUG com.example.springboot.Application - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-06-26 18:12:27 [main] INFO  com.example.springboot.Application - The following 1 profile is active: "dev"
+2025-06-26 18:12:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-06-26 18:12:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-26 18:12:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-26 18:12:28 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-06-26 18:12:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 511 ms
+2025-06-26 18:12:28 [main] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-06-26 18:12:28 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commandLineRunner' defined in com.example.springboot.Application: Unsatisfied dependency expressed through method 'commandLineRunner' parameter 1: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-06-26 18:12:28 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-26 18:12:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-26 18:12:28 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method commandLineRunner in com.example.springboot.Application required a bean of type 'javax.sql.DataSource' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2025-06-26 18:21:06 [main] INFO  com.example.springboot.Application - Starting Application using Java 17.0.15 with PID 86016 (/Users/anilshrivastava/Downloads/gs-spring-boot/complete/target/classes started by anilshrivastava in /Users/anilshrivastava/Downloads/gs-spring-boot)
+2025-06-26 18:21:06 [main] DEBUG com.example.springboot.Application - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-06-26 18:21:06 [main] INFO  com.example.springboot.Application - The following 1 profile is active: "dev"
+2025-06-26 18:21:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-06-26 18:21:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-26 18:21:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-26 18:21:07 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-06-26 18:21:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 519 ms
+2025-06-26 18:21:07 [main] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-06-26 18:21:07 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commandLineRunner' defined in com.example.springboot.Application: Unsatisfied dependency expressed through method 'commandLineRunner' parameter 1: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-06-26 18:21:07 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-26 18:21:07 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-26 18:21:07 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method commandLineRunner in com.example.springboot.Application required a bean of type 'javax.sql.DataSource' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2025-06-26 18:43:40 [main] INFO  com.example.springboot.Application - Starting Application using Java 17.0.15 with PID 87673 (/Users/anilshrivastava/Downloads/gs-spring-boot/complete/target/classes started by anilshrivastava in /Users/anilshrivastava/Downloads/gs-spring-boot)
+2025-06-26 18:43:40 [main] DEBUG com.example.springboot.Application - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-06-26 18:43:40 [main] INFO  com.example.springboot.Application - The following 1 profile is active: "dev"
+2025-06-26 18:43:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-06-26 18:43:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-26 18:43:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-26 18:43:41 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-06-26 18:43:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 536 ms
+2025-06-26 18:43:41 [main] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-06-26 18:43:41 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commandLineRunner' defined in com.example.springboot.Application: Unsatisfied dependency expressed through method 'commandLineRunner' parameter 1: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-06-26 18:43:41 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-26 18:43:41 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-26 18:43:41 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method commandLineRunner in com.example.springboot.Application required a bean of type 'javax.sql.DataSource' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2025-06-26 18:44:07 [main] INFO  com.example.springboot.Application - Starting Application using Java 17.0.15 with PID 88034 (/Users/anilshrivastava/Downloads/gs-spring-boot/complete/target/classes started by anilshrivastava in /Users/anilshrivastava/Downloads/gs-spring-boot)
+2025-06-26 18:44:07 [main] DEBUG com.example.springboot.Application - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-06-26 18:44:07 [main] INFO  com.example.springboot.Application - The following 1 profile is active: "dev"
+2025-06-26 18:44:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-06-26 18:44:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-26 18:44:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-26 18:44:07 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-06-26 18:44:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 511 ms
+2025-06-26 18:44:07 [main] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-06-26 18:44:07 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commandLineRunner' defined in com.example.springboot.Application: Unsatisfied dependency expressed through method 'commandLineRunner' parameter 1: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-06-26 18:44:07 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-26 18:44:07 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-26 18:44:07 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method commandLineRunner in com.example.springboot.Application required a bean of type 'javax.sql.DataSource' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2025-06-26 18:44:26 [main] INFO  com.example.springboot.Application - Starting Application using Java 17.0.15 with PID 88386 (/Users/anilshrivastava/Downloads/gs-spring-boot/complete/target/classes started by anilshrivastava in /Users/anilshrivastava/Downloads/gs-spring-boot)
+2025-06-26 18:44:26 [main] DEBUG com.example.springboot.Application - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-06-26 18:44:26 [main] INFO  com.example.springboot.Application - The following 1 profile is active: "dev"
+2025-06-26 18:44:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-06-26 18:44:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-26 18:44:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-26 18:44:26 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-06-26 18:44:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 518 ms
+2025-06-26 18:44:26 [main] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-06-26 18:44:26 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-06-26 18:44:26 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-06-26 18:44:26 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-26 18:44:26 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-26 18:44:26 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-26 18:44:27 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2025-06-26 18:44:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@611c3eae, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13e00016, org.springframework.security.web.context.SecurityContextHolderFilter@11826398, org.springframework.security.web.header.HeaderWriterFilter@59b492ec, org.springframework.web.filter.CorsFilter@7b3cbe6e, org.springframework.security.web.csrf.CsrfFilter@28daf506, org.springframework.security.web.authentication.logout.LogoutFilter@2674d4f6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66020d69, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7159d601, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@177ede17, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@eaf8427, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37b01ce2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1894fa9f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17176b18, org.springframework.security.web.access.ExceptionTranslationFilter@17216605, org.springframework.security.web.access.intercept.AuthorizationFilter@554566a8]
+2025-06-26 18:44:27 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-26 18:44:27 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-26 18:44:27 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-06-26 18:44:35 [main] INFO  com.example.springboot.Application - Starting Application using Java 17.0.15 with PID 88939 (/Users/anilshrivastava/Downloads/gs-spring-boot/complete/target/classes started by anilshrivastava in /Users/anilshrivastava/Downloads/gs-spring-boot)
+2025-06-26 18:44:35 [main] DEBUG com.example.springboot.Application - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-06-26 18:44:35 [main] INFO  com.example.springboot.Application - The following 1 profile is active: "dev"
+2025-06-26 18:44:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-06-26 18:44:36 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-26 18:44:36 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-26 18:44:36 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-06-26 18:44:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 495 ms
+2025-06-26 18:44:36 [main] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-06-26 18:44:36 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-06-26 18:44:36 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-06-26 18:44:36 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-26 18:44:36 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-26 18:44:36 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-26 18:44:36 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2025-06-26 18:44:36 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b3cbe6e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@177ede17, org.springframework.security.web.context.SecurityContextHolderFilter@37b01ce2, org.springframework.security.web.header.HeaderWriterFilter@49cc9b2a, org.springframework.web.filter.CorsFilter@17176b18, org.springframework.security.web.csrf.CsrfFilter@693f2213, org.springframework.security.web.authentication.logout.LogoutFilter@5a4464c5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b832551, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@33d230ce, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4e4395c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6d6039df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1894fa9f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26a4f9ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ab53860, org.springframework.security.web.access.ExceptionTranslationFilter@59b492ec, org.springframework.security.web.access.intercept.AuthorizationFilter@3751acd7]
+2025-06-26 18:44:36 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-26 18:44:36 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-26 18:44:36 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
